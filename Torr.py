@@ -3,7 +3,7 @@ import time
 
 ses = lt.session()
 ses.listen_on(6881, 6891)
-#change ports tp 8080, 8080 if this doesn't work
+#change ports to 8080, 8080 if this doesn't work
 params = {
     'save_path': '/home/user/Downloads', #this is a mock path, change it according to where you want
     'storage_mode': lt.storage_mode_t(2),
