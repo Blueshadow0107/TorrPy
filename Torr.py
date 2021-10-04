@@ -11,7 +11,7 @@ params = {
     'auto_managed': True,
     'duplicate_is_error': True}
 link = input("Enter Magnet link, or exit:")
-if link.lower == "exit":
+if link.lower() == "exit":
     exit()  
 handle = lt.add_magnet_uri(ses, link, params)
 ses.start_dht()
