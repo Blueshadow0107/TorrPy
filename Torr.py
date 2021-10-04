@@ -3,6 +3,7 @@ import time
 
 ses = lt.session()
 ses.listen_on(6881, 6891)
+#change ports tp 8080, 8080 if this doeant work
 params = {
     'save_path': '/home/moonboi/Downloads',
     'storage_mode': lt.storage_mode_t(2),
