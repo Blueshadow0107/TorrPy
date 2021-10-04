@@ -26,5 +26,7 @@ while (handle.status().state != lt.torrent_status.seeding):
     print ('%.2f%% complete (down: %.1f kb/s up: %.1f kB/s peers: %d) %s' % \
             (s.progress * 100, s.download_rate / 1000, s.upload_rate / 1000, \
             s.num_peers, state_str[s.state]))
+    if(handle.status().state == lt.torrent_status.seeding):
+        print("Completed.")
     time.sleep(5)
 
